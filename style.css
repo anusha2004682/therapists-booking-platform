@@ -1,0 +1,366 @@
+*{
+    margin=0;
+    padding=0;
+}
+.header{
+    min-height:100vh;
+    width=100%;
+    background-image:linear-gradient(rgba(148, 109, 137, 0.7),rgba(141, 130, 137, 0.7)),url(images/page.png.jpeg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    padding:2% 2%;
+    justify-content:space-between;
+    align-items:top;
+}
+nav img{
+    width:150px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:px;
+    background:#f44336;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#ffffff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+
+}
+.text-box h1{
+    font-size:62px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size:14px;
+    color:#fff;
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    boarder:1px solid #bf1111;
+    padding:12px 34px;
+    font-size:16px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    boarder:1px solid #f44336;
+    background:#f44336;
+    transition:1s;
+}
+nav.fa{
+    display:none;
+}
+@media(max-width:700px){
+    .text-box h1{
+    font-size:20px;
+}
+.nav-links ul li{
+    display:block;
+}
+.nav-links{
+    position:absolute;
+    background:#f4436;
+    height:100vh;
+    width:200px;
+    top:0;
+    right:-200px;
+    text-align:left;
+    z-index:2;
+    transition:1s;
+}
+nav.fa{
+    display:block;
+    color:#fff;
+    margin:10px;
+    font-size:22px;
+    cursor:pointer;
+}
+.nav-links ul{
+    padding:30px;
+}
+}
+</*-----doctor-----*/
+
+
+.doctor-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.doctor-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: purple;
+}
+
+.doctor-section p {
+  color: #951d1d;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.doctor-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.doctor-cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.doctor-card {
+  background-color: #fcecec;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.doctor-card img {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.doctor-card h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.doctor-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+/*---------clinics-----*/
+.clinics{
+  width:80%
+  margin:auto;
+  text-align:center;
+  padding-top:50px;
+}
+
+.hospital-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.hospital-box {
+    text-align: center;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hospital-box img {
+    width: 300px;    /* Make all images the same width */
+    height: 350px;   /* Make all images the same height */
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.clinics{
+  color:red;
+}
+.clinics p{
+  color:rgb(157, 227, 65);
+}
+.hospital-box p{
+  color:rgb(188, 14, 101);
+}
+/*------facilities-----*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #333;
+}
+
+.services-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.services-section h2 {
+  color:brown;
+  font-size: 32px;
+  margin-bottom: 10px
+  
+}
+
+.services-section p {
+  font-size: 16px;
+  color:darkcyan ;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  max-width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: hotpink;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.service-card p {
+  font-size: 14px;
+  color:cadetblue;
+}
+/*-----testimonials----*/
+.testimonials-section {
+  background-color: #f0f4f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  color: #ff701e;
+  margin-bottom: 40px;
+}
+/*-----call to action---*/
+.cta{
+  margin:100px auto;
+  width:80%;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner.png.jpeg);
+  background-position: center;
+  background-size:cover ;
+  border-radius:10px;
+  text-align:center;
+  padding:100px 0;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #8bbe4e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(41, 116, 129, 0.8);
+  padding: 20px;
+  max-width: 300px;
+  font-style: italic;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.02);
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 0.95rem;
+  color: #a90e0e;
+}
+.cta h1{
+  color:darkcyan;
+  margin-bottom:40px;
+  padding:0;
+}
+@media(max-width:700px){
+  .cta h1{
+    font-size:24px;
+  }
+}
+.footer{
+  width:100%;
+  text-align:center;
+  padding: 30px 0;
+}
+.footer h4{
+  margin-bottom:25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+/*------footer----*/
+.about-card{
+  text-align: center;
+}
+.about-card h2{
+  color: deeppink;
+}
+
